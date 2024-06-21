@@ -1,0 +1,106 @@
+:root {
+    --background-color-1: #387ed1;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-container {
+    padding: 20px;
+}
+
+.landing-image {
+    /* max-width: 100%; */
+    width: 63vw;
+    margin-bottom: 20px;
+}
+
+.landing-heading {
+    color: #424242;
+    font-weight: 400;
+    font-size: 1.8em;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.landing-subheading {
+    color: #424242;
+    font-size: 1.2em;
+    margin: 10px 0 20px 0;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.landing-btn {
+    background-color: var(--background-color-1);
+    color: var(--white);
+    border: 1px solid transparent !important;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 200px;
+    /* Add a max-width to the button */
+}
+
+.landing-btn:hover,
+.landing-btn:focus,
+.landing-btn:active {
+    background: #222;
+    color: var(--white) !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .landing-heading {
+        font-size: 1.5em;
+    }
+
+    .landing-subheading {
+        font-size: 1em;
+    }
+
+    .landing-btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .landing-btn {
+        padding: 6px 10px;
+        font-size: 19.2px;
+        font-weight: 500;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin-top: 25px;
+        width: 180px;
+    }
+
+    .landing-btn:active {
+        background: #222 !important;
+        color: var(--white) !important;
+    }
+
+    .landing-heading {
+        font-size: 44px;
+    }
+
+    .landing-subheading {
+        font-size: 20px;
+    }
+
+    .landing-image {
+        width: 390px;
+        margin-bottom: 45px;
+    }
+}
